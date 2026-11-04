@@ -76,7 +76,7 @@ form.addEventListener("submit", function (event) {
   }
 
   output.innerHTML = `
-  <h2>Ticket Created</h2>
+  <h2>Contact Us input received</h2>
   <p>${firstName} ${lastName}</p>
   <p>${type}</p>
   <p>${availableDate}</p>

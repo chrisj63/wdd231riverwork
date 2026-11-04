@@ -1,17 +1,54 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="WDD 231 - final project - Colorado River Data">
-        <meta name="author" content="Chris Johnson and Matt Berg">
+        <meta name="author" content="Chris Johnson and Matt Berg"> -->
             <!-- https://chrisj63.github.io/wdd131/eventform/index.html -->
-        <title>Event Ticket Form</title>
+       <!-- <title>Event Ticket Form</title>
         <link rel="icon" href="images/favicon.ico">    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="eventform.css" rel="stylesheet">
         <script src="eventform.js" defer></script>
+    </head> -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 231 Final - Colorado River Project.">
+        <meta name="author" content="Chris Johnson and Matt Berg">
+            <!-- https://github.com/chrisj63/wdd231riverwork -->
+        <title>Colorado River Data</title>
+        <link rel="icon" href="../images/favicon.ico">
+        <link rel="stylesheet" href="../css/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="../triangle/css/triangle.css" rel="stylesheet">
+        <script src="../triangle/js/triangle.js" defer></script>
+        <link href="../eventform/eventform.css" rel="stylesheet">
+        <script src="../eventform/eventform.js" defer></script>
     </head>
+    <body>    
+        <header>
+            <div id="top">
+              <!--  <img id="logo" src="../triangle/images/triLogo2.png" alt="picture of logo - right triangle"> -->
+                <h1>Colorado River Data</h1>
+            </div>
+            <button class="menu-btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <nav>
+                <a href="../triangle/index.html">Home</a>
+                <a href="../triangle/subPages/reservoir.html">Reservoir</a>
+                <a href="../triangle/subPages/powerplant.html">Power Plant</a>
+                <a href="../triangle/subPages/diversion.html">Diversion</a>
+                <a href="../eventform/index.html">Contact Us</a>
+                <a href="../triangle/subPages/formula.html">Formulas</a>
+            </nav>
+        </header>
+       <!--  <main class="cards"> -->
     <body>
         <main class="wrapper">
         <h1>Contact Us Form</h1>
@@ -51,11 +88,18 @@
         </div>
         <div id="guestContainer" class="field full" hidden>
             <label for="guest">Access Code</label>
-            <input id="guest" name="guest" type="text" />
+            <input id="guest" name="guest" type="text" placeholder = "Enter Secret Guest Code: ." />
         </div>
-            <button class="full" type="submit">Create Ticket</button>
+            <button class="full" type="submit">Send Form</button>
         </form>
         <section id="output" aria-live="polite"></section>
-        </main> 
+        </main>
+
+       <footer>
+            <p>&copy; 2026 Colorado River Data consultants. All Rights Reserved.</p>
+            <p id="version">40 Day Display version 0.2</p>
+        </footer>
     </body>
-</html>
+</html>   
+    <!-- </body>
+</html> -->
