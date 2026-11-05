@@ -34,9 +34,21 @@
         text-decoration: none;
         border-top: 1px solid gray;
     }
-    nav a:hover {
+    /* nav a:hover {
         text-decoration: none;
         color: #5a0001;
+    } */
+         nav a:hover {
+        animation: colorChange 0.5s forwards;
+    }
+ 
+    @keyframes colorChange {
+        from {
+            color: white;
+        }
+        to {
+            color: #5a0001;
+        }
     }
     footer {
         text-align: center;
