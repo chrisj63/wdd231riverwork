@@ -1,7 +1,7 @@
 @import url("partials/header.css");
 @import url("partials/footer.css");
 @import url("partials/blocks.css");
-@import url("normalize.min.css");
+@import url("partials/normalize.min.css");
 @import url("partials/base.css");
 @import url("partials/layout.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
