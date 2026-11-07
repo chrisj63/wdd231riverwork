@@ -1,20 +1,26 @@
-
+@import url("partials/header.css");
+@import url("partials/footer.css");
+@import url("partials/blocks.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-    body {
+    
+
+
+
+
+body {
     margin: 0;
     padding: 0;
     min-width: 250px;
     font-family: Roboto, sans-serif;
     }
-    header,
-    main,
-    footer {
-    max-width: 900px;
-    margin: 1rem auto;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    background-color: #799496;
-    min-width: 300px;
+
+    main {
+        max-width: 900px;
+        margin: 1rem auto;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        background-color: #799496;
+        min-width: 300px;
     }
     main {
         display: grid;
@@ -128,17 +134,7 @@
     button:hover {
         background-color: #58605a;
     }      
-    .cards {
-        display: grid;
-        grid-template-columns: 1fr;   
-    }
-    .card {
-        background: #313131;
-        border-radius: 15px;
-        box-shadow: 0 8px 16px rgba(0,0,0,0.9);
-        width: 400px; 
-        margin: 10px auto;
-    }
+
     .image{
         width: 400px;
         border-radius: 15px 15px 0 0;
@@ -227,5 +223,3 @@
         margin-left: auto; 
     }
 }
-
-                

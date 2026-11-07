@@ -1,0 +1,11 @@
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;   
+    }
+    .card {
+        background: #313131;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.9);
+        width: 400px; 
+        margin: 10px auto;
+    }
