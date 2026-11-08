@@ -98,9 +98,9 @@ select {
 [type=button],
 [type=reset],
 [type=submit],
-button {
+/* button {
     -webkit-appearance: button
-}
+} */
 
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
@@ -149,10 +149,10 @@ textarea {
     height: auto
 }
 
-[type=search] {
+/* [type=search] {
     -webkit-appearance: textfield;
     outline-offset: -2px
-}
+} */
 
 [type=search]::-webkit-search-decoration {
     -webkit-appearance: none
