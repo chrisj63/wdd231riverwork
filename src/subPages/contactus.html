@@ -9,12 +9,13 @@
         <title>Colorado River Data</title>
         <link rel="icon" href="../styles/css/images/favicon.ico">
         <link href="../styles/css/river.css" rel="stylesheet">
+        <link href="../styles/css/partials/eventform.css" rel="stylesheet">
         <script src="../js/eventform.js" defer></script>
+        <script src="../js/river.js" defer></script>
     </head>
     <body>    
         <header>
             <div id="top">
-              <!--  <img id="logo" src="../images/triLogo2.png" alt="picture of logo - right triangle"> -->
                 <h1>Colorado River Data</h1>
             </div>
             <button class="menu-btn">
@@ -22,70 +23,82 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </button>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="../subPages/reservoir.html">Reservoir</a>
-                <a href="../subPages/powerplant.html">Power Plant</a>
-                <a href="../subPages/diversion.html">Diversion</a>
-                <a href="./form.html">Contact Us</a>
-                <a href="../subPages/formula.html">Formulas</a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../../index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)">Data Pages &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="./reservoir.html">Reservoir</a>
+                            <a href="./powerplant.html">Power Plant</a>
+                            <a href="./diversion.html">Diversion</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)">About Us &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="./programmers.html">The Programmers</a>
+                            <a href="./contactus.html">Contact Us</a>
+                            <a href="./formula.html">Our Formulas</a>
+                        </div>
+                    </li>
+            </nav>
+            
+            <nav class="navmobile">
+                <a href="../../index.html">Home</a>
+                <a href="./reservoir.html">Reservoir</a>
+                <a href="./powerplant.html">Power Plant</a>
+                <a href="./diversion.html">Diversion</a>
+                <a href="./programmers.html">The Programmers</a>
+                <a href="./contactus.html">Contact Us</a>
+                <a href="./formula.html">Formulas</a>
             </nav>
         </header>
         <main class="cards">
-            <!-- <section class="card">
-                <div id="cardTop">
-                    <img class="acuteImage" src="../images/RightTrianglePageImage.png" alt="Isosceles Triangle image">
+            <section class="card">
+
+                <!-- <div id="cardTop"> -->
+                <div id="cuCardTop">
+                    
+                     <h2 id="cuCardLabel">Contact us Top</h2>
+                    <section id="formwrapper">
+                        <section id="output" aria-live="polite"></section>
+                        <form id="ticketform">
+                            <div class="field">
+                                <label for="firstName">First Name</label>
+                                <input id="firstName" name="firstName" type="text" required />
+                            </div>
+                            <div class="field">
+                                <label for="lastName">Last Name</label>
+                                <input id="lastName" name="lastName" type="text" required />
+                            </div>
+                            <div class="field full">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="email" required />
+                            </div>
+                            <div class="field">
+                                <label for="availableDate">Event Date</label>
+                                <input id="availableDate" name="availableDate" type="date" required />
+                            </div>
+                            <div class="field">
+                                <label for="comment">Comments / Questions</label>
+                                <textarea id="comment" name="comment" rows="5" cols="50" required></textarea>
+                            </div>
+                                <button class="full" type="submit">Send Form</button>
+                            </form>
+                    </section>
                 </div>
                 <div id="cardMiddle">
-                    <h1 class="name">Contact Us</h1>
-                </div>
-                <div id="cardBottom" class="stats">
-                    <p id="status">Status: Enter angles and/or side lengths</p>
-                    <p id="formula">Formula: formula</p>
-                    <p id="level">Use Side Angle Side or Angle Side Angle</p>
-                    <p id="instructions">Enter only numbers. Click Solve.</p>
-                </br>
-                <section class="sidesAndAngles">
-                    <div class="sides">   
-                        <div id="A" class="fullField">
-                            <label for="sideA">A</label>
-                            <input id="sideA" name="sideA" type="number" placeholder = "Side A length. Numbers only."/>
-                        </div>
-                        <div id="B" class="fullField">
-                            <label for="sideB">B</label>
-                            <input id="sideB" name="sideB" type="number" placeholder = "Side B length. Numbers only."/>
-                        </div>
-                        <div id="C" class="fullField">
-                            <label for="sideC">C</label>
-                            <input id="sideC" name="sideC" type="number" placeholder = "Side C length. Numbers only."/>
-                        </div>
+                        <h1 class="name">Contact Us</h1>
                     </div>
-                    </br>
-                    <div class="angles">    
-                        <div id="x" class="fullField">
-                            <label for="anglex">x</label>
-                            <input id="anglex" name="anglex" type="number" placeholder = "90"/>
-                        </div>
-                        <div id="y" class="fullField">
-                            <label for="angley">y</label>
-                            <input id="angley" name="angley" type="number" placeholder = "Angle y in degrees. Numbers only."/>
-                        </div>
-                        <div id="z" class="fullField">
-                            <label for="anglez">z</label>
-                            <input id="anglez" name="anglez" type="number" placeholder = "Angle z in degrees. Numbers only."/>
-                        </div>
+                    <div id="cardBottom" class="stats">
+                        <p id="status">Contact Us Bottom</p>
                     </div>
-                </section>
-                </div>
-                <div id="cardButtons" class="buttons">
-                    <button id="buttonSolve" type="submit">Solve</button>
-                    <button id="buttonReset" type="submit">Reset</button>
-                </div>
-            </section>    -->
+            </section>
         </main>
         <footer>
             <p>&copy; 2026 Colorado River Data consultants. All Rights Reserved.</p>
-            <p id="version">40 Day Display version 0.2</p>
+            <p id="version">40 Day Display version 0.3</p>
         </footer>
     </body>
 </html>

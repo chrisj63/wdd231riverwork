@@ -1,35 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colorado River Data</title>
-    <meta name="description" content="Colorado River data website.">
-    <meta name="author" content="Chris Johnson and Matt Berg">
-    <link rel="stylesheet" href="styles/river.css" />
-    <script type="module" src="scripts/river.js"></script>
-    <title>Home Page</title>
-    <!-- https://chrisj63.github.io/wdd231river/ -->
-</head>
-<body>
-    <header>
-        <h1>Colorado River Data</h1>
-
-
-    </header>
-    <main>
-        <h2>This is my main Title</h2>
-        <p>This is my paragraph.</p>
-        <h2>Sub title</h2>
-        <br>
-        <br>    
-        <a href="/src/triangle/index.html">Colorado River Data</a>
-    </main>
-
-</body>
-<footer>
-    <p>This is my footer</p>
-
-
-</footer>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="WDD 231 Final - Colorado River Project.">
+        <meta name="author" content="Chris Johnson and Matt Berg">
+            <!-- https://github.com/chrisj63/wdd231riverwork -->
+        <title>Colorado River Data</title>
+        <link rel="icon" href="src/styles/images/favicon.ico">
+        <!-- <link rel="stylesheet" href="./css/normalize.min.css"/> -->
+        <link href="./src/styles/css/river.css" rel="stylesheet">
+        <script src="./src/js/river.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <!-- <img id="logo" src="./images/triLogo2.png" alt="picture of logo - right triangle"> -->
+                <h1>Colorado River Data</h1>
+            </div>
+            <button class="menu-btn" aria-label="show hide mobile navigation">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="./index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)">Data Pages &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="./src/subPages/reservoir.html">Reservoir</a>
+                            <a href="./src/subPages/powerplant.html">Power Plant</a>
+                            <a href="./src/subPages/diversion.html">Diversion</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)">About Us &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="./src/subPages/programmers.html">The Programmers</a>
+                            <a href="./src/subPages/contactus.html">Contact Us</a>
+                            <a href="./src/subPages/formula.html">Our Formulas</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item"><a href="../eventform/index.html">Contact Us</a></li>
+                    <li class="nav-item"><a href="./subPages/formula.html">Formulas</a></li> -->
+                </ul>
+            </nav>
+            
+            <nav class="navmobile">
+                <a href="./index.html">Home</a>
+                <a href="./src/subPages/reservoir.html">Reservoir</a>
+                <a href="./src/subPages/powerplant.html">Power Plant</a>
+                <a href="./src/subPages/diversion.html">Diversion</a>
+                <a href="./src/subPages/programmers.html">The Programmers</a>
+                <a href="./src/subPages/contactus.html">Contact Us</a>
+                <a href="./src/subPages/formula.html">Formulas</a>
+            </nav>
+            <!-- <nav>
+                <a href="./index.html">Home</a>
+                <a href="./src/subPages/reservoir.html">Reservoir</a>
+                <a href="./src/subPages/powerplant.html">Power Plant</a>
+                <a href="./src/subPages/diversion.html">Diversion</a>
+                <a href="./src/subPages/form.html">Contact Us</a>
+                <a href="./src/subPages/formula.html">Formulas</a> -->
+                <!-- <a href="/src/eventform/index.html">Contact Us</a> -->
+            <!-- </nav> -->
+        </header>
+        <main>
+            <section id="reservoir" class="indexCard">
+                <a href="./src/subPages/reservoir.html">
+                    <!-- <img class="logo" src="./images/TriangleSectionTemplateWhiteRight.webp" alt="picture of logo - right triangle"> -->
+                     <H2>Reservoir Page</H2>
+                </a>     
+            </section>
+            <section id="powerplant" class="indexCard">
+                <a href="./src/subPages/powerplant.html">
+                   <!-- <img class="logo" src="./images/TriangleSectionTemplateWhiteIsosceles.webp" alt="picture of logo - Isosceles triangle"> -->
+                    <H2>Power Plant Page</H2>
+                </a>
+            </section>
+            <section id="diversion" class="indexCard">
+                <a href="./src/subPages/diversion.html">
+                   <!--  <img class="logo" src="./images/TriangleSectionTemplateWhiteObtuse.webp" alt="picture of logo - Obtuse triangle"> -->
+                     <H2>Diversion Page</H2>
+                </a>
+            </section>
+            <section id="contactus" class="indexCard">
+                <a href="./src/subPages/contactus.html">
+                   <!-- <img class="logo" src="./images/TriangleSectionTemplateWhiteAcute.webp" alt="picture of logo - Acute triangle"> -->
+                    <H2>Contact Us Page</H2>
+                </a>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Colorado River Data consultants. All Rights Reserved.</p>
+            <p id="version">40 Day Display version 0.3</p>
+        </footer>
+    </body>
 </html>

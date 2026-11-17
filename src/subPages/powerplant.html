@@ -22,13 +22,38 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </button>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="../subPages/reservoir.html">Reservoir</a>
-                <a href="../subPages/powerplant.html">Power Plant</a>
-                <a href="../subPages/diversion.html">Diversion</a>
-                <a href="./form.html">Contact Us</a>
-                <a href="../subPages/formula.html">Formulas</a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../../index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)">Data Pages &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="./reservoir.html">Reservoir</a>
+                            <a href="./powerplant.html">Power Plant</a>
+                            <a href="./diversion.html">Diversion</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="javascript:void(0)">About Us &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="./programmers.html">The Programmers</a>
+                            <a href="./contactus.html">Contact Us</a>
+                            <a href="./formula.html">Our Formulas</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item"><a href="../eventform/index.html">Contact Us</a></li>
+                    <li class="nav-item"><a href="./subPages/formula.html">Formulas</a></li> -->
+                </ul>
+            </nav>
+            
+            <nav class="navmobile">
+                <a href="../../index.html">Home</a>
+                <a href="./reservoir.html">Reservoir</a>
+                <a href="./powerplant.html">Power Plant</a>
+                <a href="./diversion.html">Diversion</a>
+                <a href="./programmers.html">The Programmers</a>
+                <a href="./contactus.html">Contact Us</a>
+                <a href="./formula.html">Formulas</a>
             </nav>
         </header>
         <main class="cards">
@@ -41,52 +66,13 @@
                     <h1 class="name">Power Plant</h1>
                 </div>
                 <div id="cardBottom" class="stats">
-                    <p id="status">Status: Enter angles and/or side lengths</p>
-                    <p id="formula">Formula: formula</p>
-                    <p id="level">Use Side Angle Side or Angle Side Angle</p>
-                    <p id="instructions">Enter only numbers. Click Solve.</p>
-                </br>
-                <section class="sidesAndAngles">
-                    <div class="sides">   
-                        <div id="A" class="fullField">
-                            <label for="sideA">A</label>
-                            <input id="sideA" name="sideA" type="number" placeholder = "Side A length. Numbers only."/>
-                        </div>
-                        <div id="B" class="fullField">
-                            <label for="sideB">B</label>
-                            <input id="sideB" name="sideB" type="number" placeholder = "Side B length. Numbers only."/>
-                        </div>
-                        <div id="C" class="fullField">
-                            <label for="sideC">C</label>
-                            <input id="sideC" name="sideC" type="number" placeholder = "Side C length. Numbers only."/>
-                        </div>
-                    </div>
-                    </br>
-                    <div class="angles">    
-                        <div id="x" class="fullField">
-                            <label for="anglex">x</label>
-                            <input id="anglex" name="anglex" type="number" placeholder = "90"/>
-                        </div>
-                        <div id="y" class="fullField">
-                            <label for="angley">y</label>
-                            <input id="angley" name="angley" type="number" placeholder = "Angle y in degrees. Numbers only."/>
-                        </div>
-                        <div id="z" class="fullField">
-                            <label for="anglez">z</label>
-                            <input id="anglez" name="anglez" type="number" placeholder = "Angle z in degrees. Numbers only."/>
-                        </div>
-                    </div>
-                </section>
-                </div>
-                <div id="cardButtons" class="buttons">
-                    <button id="buttonSolve" type="submit">Solve</button>
-                    <button id="buttonReset" type="submit">Reset</button>
+                    <p>Powerplant Bottom</p>
                 </div>
             </section>   
         </main>
         <footer>
             <p>&copy; 2026 Colorado River Data consultants. All Rights Reserved.</p>
-            <p id="version">40 Day Display version 0.2</p>
+            <p id="version">40 Day Display version 0.3</p>
         </footer>
     </body>
 </html>
